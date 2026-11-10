@@ -2,6 +2,8 @@
 
 Sitio web personal para presentar el perfil de Arturo Jiménez Aparicio como Desarrollador Web Full Stack y Técnico de Sistemas. Reúne información profesional, habilidades, formación, experiencia, contacto y proyectos destacados en una página responsive.
 
+También puedes visitar mi [perfil de GitHub](https://github.com/arturo-dev-ops), donde presento mi perfil y otros repositorios.
+
 ## ¿Qué hace?
 
 - Presenta el perfil profesional y la disponibilidad para prácticas o trabajo.
