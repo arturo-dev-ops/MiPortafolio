@@ -1,0 +1,484 @@
+<!DOCTYPE html>
+<html lang="es">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Arturo Jiménez Aparicio | Portafolio</title>
+    <meta
+      name="description"
+      content="Portafolio profesional de Arturo Jiménez Aparicio, Desarrollador Web Full Stack y Técnico de Sistemas."
+    />
+    <script src="https://cdn.tailwindcss.com"></script>
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.2/css/all.min.css"
+      crossorigin="anonymous"
+      referrerpolicy="no-referrer"
+    />
+    <link rel="stylesheet" href="css/styles.css" />
+  </head>
+  <body class="text-slate-100 antialiased">
+    <header class="sticky top-0 z-50 border-b border-slate-700/60 bg-slate-950/80 backdrop-blur-xl">
+      <nav class="mx-auto flex max-w-7xl items-center justify-between px-4 py-4 sm:px-6 lg:px-8">
+        <a href="#inicio" class="flex items-center gap-3">
+          <div class="flex h-10 w-10 items-center justify-center rounded-full bg-emerald-500/15 text-lg font-bold text-emerald-400 ring-1 ring-emerald-500/40">
+            AJ
+          </div>
+          <div>
+            <p class="text-sm uppercase tracking-[0.2em] text-slate-400">Portfolio</p>
+            <p class="text-base font-semibold text-white">Arturo Jiménez</p>
+          </div>
+        </a>
+
+        <div id="desktop-nav" class="hidden items-center gap-8 md:flex">
+          <a href="#sobre-mi" class="text-sm text-slate-300 transition hover:text-emerald-400">Sobre mí</a>
+          <a href="#habilidades" class="text-sm text-slate-300 transition hover:text-emerald-400">Habilidades</a>
+          <a href="#proyectos" class="text-sm text-slate-300 transition hover:text-emerald-400">Proyectos</a>
+          <a href="#experiencia" class="text-sm text-slate-300 transition hover:text-emerald-400">Experiencia</a>
+          <a href="#contacto" class="text-sm text-slate-300 transition hover:text-emerald-400">Contacto</a>
+        </div>
+
+        <a
+          href="#contacto"
+          class="hidden rounded-full border border-emerald-500/30 bg-emerald-500/10 px-4 py-2 text-sm font-medium text-emerald-300 transition hover:bg-emerald-500/20 md:inline-flex"
+        >
+          Contactar
+        </a>
+        <button
+          id="mobile-menu-button"
+          type="button"
+          class="inline-flex h-10 w-10 items-center justify-center rounded-full border border-slate-700 text-slate-200 md:hidden"
+          aria-label="Abrir menú de navegación"
+          aria-expanded="false"
+          aria-controls="mobile-nav"
+        >
+          <i class="fa-solid fa-bars" aria-hidden="true"></i>
+        </button>
+      </nav>
+      <div id="mobile-nav" class="hidden border-t border-slate-800 px-4 py-3 md:hidden">
+        <div class="mx-auto flex max-w-7xl flex-col gap-1">
+          <a href="#sobre-mi" class="rounded-lg px-3 py-2 text-sm text-slate-300 hover:bg-slate-800">Sobre mí</a>
+          <a href="#habilidades" class="rounded-lg px-3 py-2 text-sm text-slate-300 hover:bg-slate-800">Habilidades</a>
+          <a href="#proyectos" class="rounded-lg px-3 py-2 text-sm text-slate-300 hover:bg-slate-800">Proyectos</a>
+          <a href="#experiencia" class="rounded-lg px-3 py-2 text-sm text-slate-300 hover:bg-slate-800">Experiencia</a>
+          <a href="#contacto" class="rounded-lg px-3 py-2 text-sm text-slate-300 hover:bg-slate-800">Contacto</a>
+        </div>
+      </div>
+    </header>
+
+    <main id="inicio">
+      <section class="mx-auto max-w-7xl px-4 pb-16 pt-16 sm:px-6 lg:px-8 lg:pb-24 lg:pt-20">
+        <div class="grid items-center gap-10 lg:grid-cols-[1.2fr_0.8fr]">
+          <div>
+            <div class="mb-6 inline-flex items-center gap-2 rounded-full border border-emerald-500/30 bg-emerald-500/10 px-3 py-1.5 text-sm font-medium text-emerald-300 shadow-[0_0_30px_rgba(34,197,94,0.25)]">
+              <span class="h-2 w-2 rounded-full bg-emerald-400"></span>
+              Disponible para incorporación inmediata
+            </div>
+
+            <h1 class="max-w-2xl text-4xl font-black leading-tight text-white sm:text-5xl lg:text-6xl">
+              Desarrollo Web Full Stack +
+              <span class="bg-gradient-to-r from-emerald-400 via-green-300 to-lime-200 bg-clip-text text-transparent">
+                Infraestructura de Sistemas
+              </span>
+            </h1>
+
+            <p class="mt-6 max-w-xl text-lg text-slate-300">
+              Técnico informático y desarrollador web con experiencia en PHP, JavaScript, MySQL, Docker,
+              Tailwind CSS y administración de servidores, redes y entornos empresariales.
+            </p>
+
+            <div class="mt-8 flex flex-wrap gap-4">
+              <a
+                href="#proyectos"
+                class="rounded-full bg-emerald-500 px-5 py-3 text-sm font-semibold text-slate-950 transition hover:bg-emerald-400"
+              >
+                Ver proyectos
+              </a>
+              <button
+                type="button"
+                id="download-cv"
+                class="rounded-full border border-slate-600 bg-slate-900/70 px-5 py-3 text-sm font-semibold text-slate-100 transition hover:border-emerald-500/50 hover:text-emerald-300"
+              >
+                Descargar CV
+              </button>
+              <a
+                href="#contacto"
+                class="rounded-full border border-slate-600 bg-slate-900/70 px-5 py-3 text-sm font-semibold text-slate-100 transition hover:border-emerald-500/50 hover:text-emerald-300"
+              >
+                Contactar
+              </a>
+            </div>
+
+            <div class="mt-10 flex flex-wrap items-center gap-6 text-sm text-slate-300">
+              <span class="inline-flex items-center gap-2"><i class="fa-solid fa-location-dot text-emerald-400"></i> Villacañas, Toledo</span>
+              <span class="inline-flex items-center gap-2"><i class="fa-solid fa-briefcase text-emerald-400"></i> Disponible para prácticas / trabajo</span>
+            </div>
+          </div>
+
+          <div class="relative">
+            <div class="glass relative overflow-hidden rounded-3xl p-6 shadow-2xl shadow-emerald-500/10">
+              <div class="absolute inset-0 bg-gradient-to-br from-emerald-500/10 via-transparent to-sky-500/10"></div>
+              <div class="relative">
+                <div class="mb-6 flex items-center justify-between">
+                  <p class="text-sm uppercase tracking-[0.2em] text-slate-400">Perfil</p>
+                  <span class="rounded-full border border-emerald-500/30 bg-emerald-500/10 px-2.5 py-1 text-xs text-emerald-300">Open to work</span>
+                </div>
+
+                <div class="rounded-2xl border border-slate-700 bg-slate-950/70 p-5">
+                  <div class="mb-5 flex items-center gap-4">
+                    <div class="flex h-16 w-16 items-center justify-center rounded-2xl bg-gradient-to-br from-emerald-500 to-lime-300 text-xl font-black text-slate-950">
+                      AJ
+                    </div>
+                    <div>
+                      <h2 class="text-xl font-bold text-white">Arturo Jiménez Aparicio</h2>
+                      <p class="text-sm text-emerald-300">Desarrollador Web Full Stack</p>
+                    </div>
+                  </div>
+
+                  <div class="space-y-4 text-sm text-slate-300">
+                    <div class="flex items-center justify-between rounded-xl bg-slate-900/60 px-3 py-2">
+                      <span>PHP</span>
+                      <span class="text-emerald-400">Backend</span>
+                    </div>
+                    <div class="flex items-center justify-between rounded-xl bg-slate-900/60 px-3 py-2">
+                      <span>JavaScript</span>
+                      <span class="text-emerald-400">Frontend</span>
+                    </div>
+                    <div class="flex items-center justify-between rounded-xl bg-slate-900/60 px-3 py-2">
+                      <span>MySQL</span>
+                      <span class="text-emerald-400">Bases de datos</span>
+                    </div>
+                    <div class="flex items-center justify-between rounded-xl bg-slate-900/60 px-3 py-2">
+                      <span>Docker / Infra</span>
+                      <span class="text-emerald-400">Sistemas</span>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </section>
+
+      <section id="sobre-mi" class="mx-auto max-w-7xl px-4 py-16 sm:px-6 lg:px-8">
+        <div class="mb-10">
+          <p class="text-sm uppercase tracking-[0.2em] text-emerald-400">Sobre mí</p>
+          <h2 class="section-title mt-3 text-3xl font-bold text-white sm:text-4xl">          Mi perfil profesional</h2>
+        </div>
+
+        <div class="grid gap-6 lg:grid-cols-2">
+          <div class="glass rounded-3xl p-8">
+            <p class="text-lg leading-8 text-slate-300">
+              Desarrollador Web Full Stack y Técnico de Sistemas, con formación en SMR, ASIR y programación
+              web Full Stack. Combino el desarrollo de aplicaciones con la administración de sistemas,
+              redes y servidores.
+            </p>
+          </div>
+
+          <div class="grid gap-5 sm:grid-cols-2">
+            <div class="glass rounded-2xl p-5">
+              <p class="text-sm uppercase tracking-[0.2em] text-slate-400">Formación</p>
+              <h3 class="mt-3 text-xl font-semibold text-white">ASIR + Full Stack</h3>
+              <p class="mt-2 text-sm text-slate-300">IES Valdehierro + Campus MasterD</p>
+            </div>
+            <div class="glass rounded-2xl p-5">
+              <p class="text-sm uppercase tracking-[0.2em] text-slate-400">Especialidad</p>
+              <h3 class="mt-3 text-xl font-semibold text-white">Backend + Infra</h3>
+              <p class="mt-2 text-sm text-slate-300">PHP, MySQL, Docker, redes y servidores</p>
+            </div>
+            <div class="glass rounded-2xl p-5">
+              <p class="text-sm uppercase tracking-[0.2em] text-slate-400">Disponibilidad</p>
+              <h3 class="mt-3 text-xl font-semibold text-white">Prácticas / trabajo</h3>
+              <p class="mt-2 text-sm text-slate-300">Convenio de prácticas de 300 horas disponible</p>
+            </div>
+            <div class="glass rounded-2xl p-5">
+              <p class="text-sm uppercase tracking-[0.2em] text-slate-400">Ubicación</p>
+              <h3 class="mt-3 text-xl font-semibold text-white">Villacañas</h3>
+              <p class="mt-2 text-sm text-slate-300">Toledo</p>
+            </div>
+          </div>
+        </div>
+      </section>
+
+      <section id="habilidades" class="mx-auto max-w-7xl px-4 py-16 sm:px-6 lg:px-8">
+        <div class="mb-10">
+          <p class="text-sm uppercase tracking-[0.2em] text-emerald-400">Habilidades</p>
+          <h2 class="section-title mt-3 text-3xl font-bold text-white sm:text-4xl">Stack técnico</h2>
+        </div>
+
+        <div class="glass rounded-3xl p-4 sm:p-6">
+          <div class="mb-6 flex flex-wrap gap-3" id="skill-tabs">
+            <button class="skill-tab active rounded-full border border-emerald-500/30 bg-emerald-500/15 px-4 py-2 text-sm font-medium text-emerald-300" data-target="frontend">
+              Frontend
+            </button>
+            <button class="skill-tab rounded-full border border-slate-700 bg-slate-900/60 px-4 py-2 text-sm font-medium text-slate-300" data-target="backend">
+              Backend & BD
+            </button>
+            <button class="skill-tab rounded-full border border-slate-700 bg-slate-900/60 px-4 py-2 text-sm font-medium text-slate-300" data-target="sistemas">
+              Sistemas & DevOps
+            </button>
+          </div>
+
+          <div id="skill-panels" class="grid gap-5 md:grid-cols-2 xl:grid-cols-3">
+            <div class="skill-panel fade-in" data-panel="frontend">
+              <div class="rounded-2xl border border-slate-700 bg-slate-900/60 p-5">
+                <h3 class="mb-4 text-lg font-semibold text-white">Frontend</h3>
+                <div class="flex flex-wrap gap-2">
+                  <span class="rounded-full border border-slate-600 bg-slate-800 px-3 py-1 text-sm text-slate-200">HTML5</span>
+                  <span class="rounded-full border border-slate-600 bg-slate-800 px-3 py-1 text-sm text-slate-200">CSS3</span>
+                  <span class="rounded-full border border-slate-600 bg-slate-800 px-3 py-1 text-sm text-slate-200">JavaScript ES6+</span>
+                  <span class="rounded-full border border-slate-600 bg-slate-800 px-3 py-1 text-sm text-slate-200">React</span>
+                  <span class="rounded-full border border-slate-600 bg-slate-800 px-3 py-1 text-sm text-slate-200">Vue</span>
+                  <span class="rounded-full border border-slate-600 bg-slate-800 px-3 py-1 text-sm text-slate-200">Angular</span>
+                  <span class="rounded-full border border-slate-600 bg-slate-800 px-3 py-1 text-sm text-slate-200">Tailwind CSS</span>
+                  <span class="rounded-full border border-slate-600 bg-slate-800 px-3 py-1 text-sm text-slate-200">Bootstrap</span>
+                </div>
+              </div>
+            </div>
+
+            <div class="skill-panel hidden fade-in" data-panel="backend">
+              <div class="rounded-2xl border border-slate-700 bg-slate-900/60 p-5">
+                <h3 class="mb-4 text-lg font-semibold text-white">Backend & Bases de datos</h3>
+                <div class="flex flex-wrap gap-2">
+                  <span class="rounded-full border border-slate-600 bg-slate-800 px-3 py-1 text-sm text-slate-200">PHP</span>
+                  <span class="rounded-full border border-slate-600 bg-slate-800 px-3 py-1 text-sm text-slate-200">POO</span>
+                  <span class="rounded-full border border-slate-600 bg-slate-800 px-3 py-1 text-sm text-slate-200">MVC</span>
+                  <span class="rounded-full border border-slate-600 bg-slate-800 px-3 py-1 text-sm text-slate-200">PDO</span>
+                  <span class="rounded-full border border-slate-600 bg-slate-800 px-3 py-1 text-sm text-slate-200">Node.js</span>
+                  <span class="rounded-full border border-slate-600 bg-slate-800 px-3 py-1 text-sm text-slate-200">Python</span>
+                  <span class="rounded-full border border-slate-600 bg-slate-800 px-3 py-1 text-sm text-slate-200">MySQL</span>
+                  <span class="rounded-full border border-slate-600 bg-slate-800 px-3 py-1 text-sm text-slate-200">DBeaver</span>
+                </div>
+              </div>
+            </div>
+
+            <div class="skill-panel hidden fade-in" data-panel="sistemas">
+              <div class="rounded-2xl border border-slate-700 bg-slate-900/60 p-5">
+                <h3 class="mb-4 text-lg font-semibold text-white">Sistemas & DevOps</h3>
+                <div class="flex flex-wrap gap-2">
+                  <span class="rounded-full border border-slate-600 bg-slate-800 px-3 py-1 text-sm text-slate-200">Docker</span>
+                  <span class="rounded-full border border-slate-600 bg-slate-800 px-3 py-1 text-sm text-slate-200">Linux (Lubuntu/Ubuntu)</span>
+                  <span class="rounded-full border border-slate-600 bg-slate-800 px-3 py-1 text-sm text-slate-200">Laragon</span>
+                  <span class="rounded-full border border-slate-600 bg-slate-800 px-3 py-1 text-sm text-slate-200">VS Code</span>
+                  <span class="rounded-full border border-slate-600 bg-slate-800 px-3 py-1 text-sm text-slate-200">Git/GitHub</span>
+                  <span class="rounded-full border border-slate-600 bg-slate-800 px-3 py-1 text-sm text-slate-200">GLPI</span>
+                  <span class="rounded-full border border-slate-600 bg-slate-800 px-3 py-1 text-sm text-slate-200">Redes</span>
+                  <span class="rounded-full border border-slate-600 bg-slate-800 px-3 py-1 text-sm text-slate-200">Servidores</span>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </section>
+
+      <section id="proyectos" class="mx-auto max-w-7xl px-4 py-16 sm:px-6 lg:px-8">
+        <div class="mb-10">
+          <p class="text-sm uppercase tracking-[0.2em] text-emerald-400">Proyectos</p>
+          <h2 class="section-title mt-3 text-3xl font-bold text-white sm:text-4xl">Proyectos destacados</h2>
+        </div>
+
+        <div class="mb-8 flex flex-wrap gap-3" id="project-filters">
+          <button class="filter-btn active rounded-full border border-emerald-500/30 bg-emerald-500/15 px-4 py-2 text-sm font-medium text-emerald-300" data-filter="all">Todos</button>
+          <button class="filter-btn rounded-full border border-slate-700 bg-slate-900/60 px-4 py-2 text-sm font-medium text-slate-300" data-filter="fullstack">Full Stack</button>
+          <button class="filter-btn rounded-full border border-slate-700 bg-slate-900/60 px-4 py-2 text-sm font-medium text-slate-300" data-filter="sistemas">Sistemas / Docker</button>
+          <button class="filter-btn rounded-full border border-slate-700 bg-slate-900/60 px-4 py-2 text-sm font-medium text-slate-300" data-filter="frontend">Frontend</button>
+        </div>
+
+        <div id="projects-grid" class="grid gap-6 lg:grid-cols-3">
+          <article class="project-card glass rounded-3xl p-5" data-category="fullstack">
+            <div class="mb-5 flex items-center justify-between">
+              <span class="rounded-full bg-emerald-500/15 px-3 py-1 text-xs font-medium text-emerald-300">Full Stack</span>
+              <i class="fa-solid fa-shop text-emerald-400"></i>
+            </div>
+            <h3 class="text-xl font-semibold text-white">E-Commerce Web App</h3>
+            <p class="mt-3 text-sm leading-6 text-slate-300">
+              Tienda online con catálogo interactivo, carrito de compras, gestión de sesiones y usuarios, y panel de administración del inventario.
+            </p>
+            <div class="mt-4 flex flex-wrap gap-2">
+              <span class="rounded-full border border-slate-600 bg-slate-800 px-2.5 py-1 text-xs text-slate-200">PHP</span>
+              <span class="rounded-full border border-slate-600 bg-slate-800 px-2.5 py-1 text-xs text-slate-200">MySQL</span>
+              <span class="rounded-full border border-slate-600 bg-slate-800 px-2.5 py-1 text-xs text-slate-200">JavaScript</span>
+              <span class="rounded-full border border-slate-600 bg-slate-800 px-2.5 py-1 text-xs text-slate-200">Tailwind</span>
+            </div>
+          </article>
+
+          <article class="project-card glass rounded-3xl p-5" data-category="sistemas">
+            <div class="mb-5 flex items-center justify-between">
+              <span class="rounded-full bg-emerald-500/15 px-3 py-1 text-xs font-medium text-emerald-300">Sistemas / Docker</span>
+              <i class="fa-solid fa-server text-emerald-400"></i>
+            </div>
+            <h3 class="text-xl font-semibold text-white">Homelab & Helpdesk Dashboard</h3>
+            <p class="mt-3 text-sm leading-6 text-slate-300">
+              Panel de monitorización de infraestructura y gestión de tickets, con Docker, Linux y GLPI API.
+            </p>
+            <div class="mt-4 flex flex-wrap gap-2">
+              <span class="rounded-full border border-slate-600 bg-slate-800 px-2.5 py-1 text-xs text-slate-200">Docker</span>
+              <span class="rounded-full border border-slate-600 bg-slate-800 px-2.5 py-1 text-xs text-slate-200">GLPI API</span>
+              <span class="rounded-full border border-slate-600 bg-slate-800 px-2.5 py-1 text-xs text-slate-200">JavaScript</span>
+              <span class="rounded-full border border-slate-600 bg-slate-800 px-2.5 py-1 text-xs text-slate-200">Linux</span>
+            </div>
+          </article>
+
+          <article class="project-card glass rounded-3xl p-5" data-category="frontend">
+            <div class="mb-5 flex items-center justify-between">
+              <span class="rounded-full bg-emerald-500/15 px-3 py-1 text-xs font-medium text-emerald-300">Full Stack</span>
+              <i class="fa-solid fa-comments text-emerald-400"></i>
+            </div>
+            <h3 class="text-xl font-semibold text-white">Foro Técnico de Sistemas & Código</h3>
+            <p class="mt-3 text-sm leading-6 text-slate-300">
+              Comunidad temática para debatir sobre redes y software libre, desarrollada con PHP, MySQL y Tailwind CSS.
+            </p>
+            <div class="mt-4 flex flex-wrap gap-2">
+              <span class="rounded-full border border-slate-600 bg-slate-800 px-2.5 py-1 text-xs text-slate-200">PHP</span>
+              <span class="rounded-full border border-slate-600 bg-slate-800 px-2.5 py-1 text-xs text-slate-200">MySQL</span>
+              <span class="rounded-full border border-slate-600 bg-slate-800 px-2.5 py-1 text-xs text-slate-200">Tailwind CSS</span>
+            </div>
+          </article>
+        </div>
+      </section>
+
+      <section id="experiencia" class="mx-auto max-w-7xl px-4 py-16 sm:px-6 lg:px-8">
+        <div class="mb-10">
+          <p class="text-sm uppercase tracking-[0.2em] text-emerald-400">Experiencia y educación</p>
+          <h2 class="section-title mt-3 text-3xl font-bold text-white sm:text-4xl">Trayectoria profesional</h2>
+        </div>
+
+        <div class="grid gap-6 lg:grid-cols-2">
+          <div class="glass rounded-3xl p-6">
+            <h3 class="mb-5 text-xl font-semibold text-white">Experiencia laboral</h3>
+            <div class="space-y-6 border-l border-slate-700 pl-5">
+              <div class="relative">
+                <span class="absolute -left-[1.72rem] top-1 h-3 w-3 rounded-full bg-emerald-400 ring-4 ring-slate-950"></span>
+                <p class="text-sm uppercase tracking-[0.2em] text-emerald-400">Sep 2024 - Dic 2024</p>
+                <h4 class="mt-2 text-lg font-semibold text-white">Técnico IT Helpdesk</h4>
+                <p class="text-sm text-slate-400">GESCOBRO S.L.U.</p>
+                <ul class="mt-3 list-disc space-y-1 pl-5 text-sm leading-6 text-slate-300">
+                  <li>Soporte remoto a usuarios mediante Microsoft Teams.</li>
+                  <li>Gestión de más de 100 incidencias con GLPI.</li>
+                  <li>Mantenimiento preventivo de redes y equipos.</li>
+                </ul>
+              </div>
+            </div>
+          </div>
+
+          <div class="glass rounded-3xl p-6">
+            <h3 class="mb-5 text-xl font-semibold text-white">Educación</h3>
+            <div class="space-y-6 border-l border-slate-700 pl-5">
+              <div class="relative">
+                <span class="absolute -left-[1.72rem] top-1 h-3 w-3 rounded-full bg-emerald-400 ring-4 ring-slate-950"></span>
+                <h4 class="mt-2 text-lg font-semibold text-white">Curso Superior en Programación Web Full Stack</h4>
+                <p class="text-sm text-slate-400">Campus MasterD</p>
+              </div>
+
+              <div class="relative">
+                <span class="absolute -left-[1.72rem] top-1 h-3 w-3 rounded-full bg-emerald-400 ring-4 ring-slate-950"></span>
+                <h4 class="mt-2 text-lg font-semibold text-white">Técnico Superior en ASIR</h4>
+                <p class="text-sm text-slate-400">IES Valdehierro</p>
+              </div>
+
+              <div class="relative">
+                <span class="absolute -left-[1.72rem] top-1 h-3 w-3 rounded-full bg-emerald-400 ring-4 ring-slate-950"></span>
+                <h4 class="mt-2 text-lg font-semibold text-white">Técnico en SMR</h4>
+                <p class="text-sm text-slate-400">IES Valdehierro</p>
+              </div>
+            </div>
+          </div>
+        </div>
+      </section>
+
+      <section id="contacto" class="mx-auto max-w-7xl px-4 py-16 sm:px-6 lg:px-8">
+        <div class="mb-10">
+          <p class="text-sm uppercase tracking-[0.2em] text-emerald-400">Contacto</p>
+          <h2 class="section-title mt-3 text-3xl font-bold text-white sm:text-4xl">Hablemos</h2>
+        </div>
+
+        <div class="grid gap-6 lg:grid-cols-[0.85fr_1.15fr]">
+          <div class="space-y-5">
+            <div class="glass rounded-2xl p-5">
+              <div class="mb-3 flex items-center gap-3 text-emerald-400"><i class="fa-solid fa-envelope"></i> <span class="text-sm uppercase tracking-[0.2em]">Email</span></div>
+              <a href="mailto:arturojimenezaparicio@gmail.com" class="text-lg text-white hover:text-emerald-300">arturojimenezaparicio@gmail.com</a>
+            </div>
+
+            <div class="glass rounded-2xl p-5">
+              <div class="mb-3 flex items-center gap-3 text-emerald-400"><i class="fa-solid fa-phone"></i> <span class="text-sm uppercase tracking-[0.2em]">Teléfono</span></div>
+              <a href="tel:+34674998617" class="text-lg text-white hover:text-emerald-300">+34 674 998 617</a>
+            </div>
+
+            <div class="glass rounded-2xl p-5">
+              <div class="mb-3 flex items-center gap-3 text-emerald-400"><i class="fa-solid fa-location-dot"></i> <span class="text-sm uppercase tracking-[0.2em]">Ubicación</span></div>
+              <p class="text-lg text-white">Villacañas (Toledo)</p>
+            </div>
+
+            <div class="glass rounded-2xl p-5">
+              <div class="mb-3 flex items-center gap-3 text-emerald-400"><i class="fa-brands fa-github"></i> <span class="text-sm uppercase tracking-[0.2em]">GitHub / LinkedIn</span></div>
+              <div class="space-y-2 text-white">
+                <a href="https://github.com/arturo-dev-ops" target="_blank" rel="noreferrer" class="block hover:text-emerald-300">GitHub: github.com/arturo-dev-ops</a>
+                <a href="https://www.linkedin.com/in/arturo-jiménez-aparicio-0a18662b7" target="_blank" rel="noreferrer" class="block hover:text-emerald-300">LinkedIn: /in/arturo-jiménez-aparicio</a>
+              </div>
+            </div>
+          </div>
+
+          <div class="glass rounded-3xl p-6">
+            <form id="contactForm" class="space-y-5">
+              <div>
+                <label for="name" class="mb-2 block text-sm font-medium text-slate-300">Nombre</label>
+                <input id="name" type="text" required class="w-full rounded-xl border border-slate-700 bg-slate-950/60 px-4 py-3 text-white outline-none transition focus:border-emerald-500" placeholder="Tu nombre" />
+              </div>
+              <div>
+                <label for="email" class="mb-2 block text-sm font-medium text-slate-300">Email</label>
+                <input id="email" type="email" required class="w-full rounded-xl border border-slate-700 bg-slate-950/60 px-4 py-3 text-white outline-none transition focus:border-emerald-500" placeholder="tuemail@ejemplo.com" />
+              </div>
+              <div>
+                <label for="message" class="mb-2 block text-sm font-medium text-slate-300">Mensaje</label>
+                <textarea id="message" rows="5" required class="w-full rounded-xl border border-slate-700 bg-slate-950/60 px-4 py-3 text-white outline-none transition focus:border-emerald-500" placeholder="Cuéntame sobre tu proyecto o propuesta..."></textarea>
+              </div>
+              <button type="submit" class="inline-flex items-center gap-2 rounded-full bg-emerald-500 px-5 py-3 text-sm font-semibold text-slate-950 transition hover:bg-emerald-400">
+                <i class="fa-solid fa-paper-plane"></i>
+                Enviar mensaje
+              </button>
+              <p id="formStatus" class="hidden text-sm text-emerald-300" role="status" aria-live="polite"></p>
+            </form>
+          </div>
+        </div>
+      </section>
+    </main>
+
+    <article id="cv-print">
+      <h1>Arturo Jiménez Aparicio</h1>
+      <p><strong>Desarrollador Web Full Stack / Técnico de Sistemas</strong></p>
+      <p>Villacañas (Toledo) · +34 674 998 617 · arturojimenezaparicio@gmail.com</p>
+      <p><a href="https://github.com/arturo-dev-ops">github.com/arturo-dev-ops</a> ·
+        <a href="https://www.linkedin.com/in/arturo-jiménez-aparicio-0a18662b7">LinkedIn</a></p>
+
+      <h2>Perfil profesional</h2>
+      <p>Técnico informático y desarrollador web con formación en SMR, ASIR y desarrollo Full Stack. Experiencia en soporte IT, resolución de incidencias, desarrollo web y administración de sistemas y redes. Disponible para empleo y prácticas con convenio de 300 horas.</p>
+
+      <h2>Experiencia</h2>
+      <p><strong>Técnico IT Helpdesk — GESCOBRO S.L.U.</strong> · Sep. 2024 – Dic. 2024</p>
+      <ul>
+        <li>Soporte remoto a usuarios mediante Microsoft Teams.</li>
+        <li>Gestión de más de 100 incidencias con GLPI.</li>
+        <li>Mantenimiento preventivo de redes y equipos.</li>
+      </ul>
+
+      <h2>Formación</h2>
+      <ul>
+        <li>Curso Superior en Programación Web Full Stack — Campus MasterD.</li>
+        <li>Técnico Superior en Administración de Sistemas Informáticos en Red (ASIR) — IES Valdehierro.</li>
+        <li>Técnico en Sistemas Microinformáticos y Redes (SMR) — IES Valdehierro.</li>
+      </ul>
+
+      <h2>Habilidades técnicas</h2>
+      <p>HTML5, CSS3, JavaScript (ES6+), React, Vue, Angular, Tailwind CSS, Bootstrap, PHP (POO, MVC, PDO), Node.js, Python, MySQL, DBeaver, Docker, Linux (Lubuntu/Ubuntu), Laragon, VS Code, Git/GitHub, GLPI, redes y servidores.</p>
+    </article>
+
+    <footer class="border-t border-slate-800 bg-slate-950/80">
+      <div class="mx-auto flex max-w-7xl flex-col items-center justify-between gap-4 px-4 py-6 text-sm text-slate-400 sm:flex-row sm:px-6 lg:px-8">
+        <p>© <span id="year"></span> Arturo Jiménez Aparicio</p>
+        <p>Desarrollador Web Full Stack & Técnico de Sistemas</p>
+      </div>
+    </footer>
+
+    <script src="js/script.js"></script>
+  </body>
+</html>
