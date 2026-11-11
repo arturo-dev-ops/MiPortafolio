@@ -1,0 +1,26 @@
+{
+  "name": "miportafolio",
+  "version": "1.0.0",
+  "description": "Sitio web personal para presentar el perfil de Arturo Jiménez Aparicio como Desarrollador Web Full Stack y Técnico de Sistemas. Reúne información profesional, habilidades, formación, experiencia, contacto y proyectos destacados en una página responsive.",
+  "main": "index.js",
+  "scripts": {
+    "build:css": "npx tailwindcss -i ./src/input.css -o ./dist/output.css --minify",
+    "watch:css": "npx tailwindcss -i ./src/input.css -o ./dist/output.css --watch",
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/arturo-dev-ops/MiPortafolio.git"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "type": "commonjs",
+  "bugs": {
+    "url": "https://github.com/arturo-dev-ops/MiPortafolio/issues"
+  },
+  "homepage": "https://github.com/arturo-dev-ops/MiPortafolio#readme",
+  "devDependencies": {
+    "tailwindcss": "^3.4.19"
+  }
+}
