@@ -20,6 +20,7 @@ mobileNav.querySelectorAll('a').forEach((link) => {
 
 document.getElementById('download-cv').addEventListener('click', () => {
   window.print();
+  // esto hace: a
 });
 
 const skillTabs = document.querySelectorAll('.skill-tab');
@@ -64,7 +65,7 @@ filterButtons.forEach((button) => {
 });
 
 const form = document.getElementById('contactForm');
-const status = document.getElementById('formStatus');
+const formStatus = document.getElementById('formStatus');
 
 form.addEventListener('submit', (event) => {
   event.preventDefault();
@@ -75,21 +76,21 @@ form.addEventListener('submit', (event) => {
   const emailRegex = /^[^\s@]+@[^\s@]+\.[^\s@]+$/;
 
   if (!name || !message) {
-    status.textContent = 'Por favor, completa todos los campos.';
-    status.classList.remove('hidden');
+    formStatus.textContent = 'Por favor, completa todos los campos.';
+    formStatus.classList.remove('hidden');
     return;
   }
 
   if (!emailRegex.test(email)) {
-    status.textContent = 'Introduce un email válido.';
-    status.classList.remove('hidden');
+    formStatus.textContent = 'Introduce un email válido.';
+    formStatus.classList.remove('hidden');
     return;
   }
 
   const subject = encodeURIComponent(`Contacto desde el portfolio: ${name}`);
   const body = encodeURIComponent(`Nombre: ${name}\nEmail: ${email}\n\n${message}`);
-  status.textContent = 'Se abrirá tu aplicación de correo para enviar el mensaje.';
-  status.classList.remove('hidden');
+  formStatus.textContent = 'Se abrirá tu aplicación de correo para enviar el mensaje.';
+  formStatus.classList.remove('hidden');
   window.location.href = `mailto:arturojimenezaparicio@gmail.com?subject=${subject}&body=${body}`;
 });
 
